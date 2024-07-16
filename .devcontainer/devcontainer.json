@@ -1,6 +1,6 @@
 {
     "name": "Kubernetes - Local Configuration",
-    "image": "quay.io/kubermatic-labs/devcontainers:base-v0.0.1",
+    "image": "quay.io/kubermatic-labs/devcontainers:base-49847fd",
 
     "customizations": {
         "vscode": {
