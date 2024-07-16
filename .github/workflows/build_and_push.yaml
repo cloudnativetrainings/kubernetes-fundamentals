@@ -5,8 +5,8 @@ on:
     branches:
       - 'main'
     paths:
-      - '.devcontainers/base/**'
-      - '.devcontainers/cloud-provider-kind/**'
+      - '.devcontainer/base/**'
+      - '.devcontainer/cloud-provider-kind/**'
 
 env:
   CONTAINER_NAME: 'quay.io/kubermatic-labs/devcontainers'
@@ -25,8 +25,8 @@ jobs:
         id: filter
         with:
           filters: |
-            base: '.devcontainers/base/**'
-            cloud-provider-kind: '.devcontainers/cloud-provider-kind/**'
+            base: '.devcontainer/base/**'
+            cloud-provider-kind: '.devcontainer/cloud-provider-kind/**'
 
   generate_short_sha:
     runs-on: ubuntu-latest
@@ -67,8 +67,8 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          context: ./.devcontainers/${{ matrix.application }}
-          file: ./.devcontainers/${{ matrix.application }}/Dockerfile
+          context: ./.devcontainer/${{ matrix.application }}
+          file: ./.devcontainer/${{ matrix.application }}/Dockerfile
           platforms: linux/arm64,linux/amd64
           tags: |
             ${{ env.CONTAINER_NAME }}:${{ matrix.application }}-${{ needs.generate_short_sha.outputs.sha }}
