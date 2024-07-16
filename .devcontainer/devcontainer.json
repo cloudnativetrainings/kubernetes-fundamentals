@@ -1,0 +1,26 @@
+{
+    "name": "Kubernetes - Local Configuration",
+    "image": "quay.io/kubermatic-labs/devcontainers:base-v0.0.1",
+
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "workbench.editorAssociations": {
+                    "*.md": "vscode.markdown.preview.editor"
+                }
+            }
+        }
+    },
+
+    "features": {
+        "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
+            "enableNonRootDocker": "true",
+            "moby": "true"
+        }
+    },
+
+    "remoteUser": "root",
+    "runArgs": ["--network=host"],
+    "forwardPorts": [8080, 80, 443],
+    "postCreateCommand": "/entrypoint.sh"
+}
