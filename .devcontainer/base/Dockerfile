@@ -18,4 +18,3 @@ COPY --chmod=755 entrypoint.sh /entrypoint.sh
 COPY kind-cluster-config.yaml /kind-cluster-config.yaml
 
 ENTRYPOINT ["/entrypoint.sh"]
-
