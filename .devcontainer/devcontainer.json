@@ -11,7 +11,7 @@
                 "files.exclude": {
                     ".git/": true,
                     ".github/": true,
-                    ".devcontaier/": true
+                    ".devcontainer/": true
                 }
             }
         }

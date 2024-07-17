@@ -30,15 +30,25 @@ cat pvc.yaml
 kubectl create -f pvc.yaml
 ```
 
+## Create a pod that consumes this pvc
+
+The `volumeBindingMode` is set to `WaitForFirstConsumer`, meaning that the PV will not be created until a Pod asks for it:
+
+```bash
+cat pod.yaml
+kubectl create -f pod.yaml
+```
+
 ## Verify that a pv got created and its state
 
 ```bash
-kubectl get pvc,pv
+kubectl get pod,pvc,pv
 ```
 
-## Delete the pvc
+## Delete the pvc and the pod
 
 ```bash
+kubectl delete pod my-pod
 kubectl delete pvc my-pvc
 ```
 
@@ -62,15 +72,22 @@ cat pvc.yaml
 kubectl create -f pvc.yaml
 ```
 
+## Create a pod to consume PV
+
+```bash
+kubectl create -f pod.yaml
+```
+
 ## Verify that a pv got created and its state again
 
 ```bash
-kubectl get pvc,pv
+kubectl get pod,pvc,pv
 ```
 
-## Delete the pvc again
+## Delete the pvc and the pod again
 
 ```bash
+kubectl delete pod my-pod
 kubectl delete pvc my-pvc
 ```
 
