@@ -1,12 +1,17 @@
 {
     "name": "Kubernetes - Local Configuration",
-    "image": "quay.io/kubermatic-labs/devcontainers:base-49847fd",
+    "image": "quay.io/kubermatic-labs/devcontainers:base-50376cc",
 
     "customizations": {
         "vscode": {
             "settings": {
                 "workbench.editorAssociations": {
                     "*.md": "vscode.markdown.preview.editor"
+                },
+                "files.exclude": {
+                    ".git/": true,
+                    ".github/": true,
+                    ".devcontaier/": true
                 }
             }
         }
