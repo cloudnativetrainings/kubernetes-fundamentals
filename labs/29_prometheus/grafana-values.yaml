@@ -1,3 +1,1 @@
 adminPassword: myPassw0rd
-service:
-  type: LoadBalancer

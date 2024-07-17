@@ -79,5 +79,5 @@ echo "https://${CODESPACE_NAME}-80.app.github.dev/blue"
 
 ```bash
 kubectl delete -f .
-kubectl delete -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.9.5/deploy/static/provider/cloud/deploy.yaml
+helm uninstall ingress-nginx -n ingress-nginx
 ```

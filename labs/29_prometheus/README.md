@@ -16,23 +16,11 @@ kubectl create -f pod.yaml
 
 ## Prometheus deployment
 
-* Add the prometheus-community helm repo
-
-  ```bash
-  helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
-  helm repo update
-  ```
-
-* Search for a prometheus chart via helm
-
-  ```bash
-  helm search repo prometheus
-  ```
-
 * Install prometheus
 
   ```bash
-  helm install my-prometheus prometheus-community/prometheus -f prometheus-values.yaml
+  helm install my-prometheus prometheus \
+    --repo https://prometheus-community.github.io/helm-charts
   ```
 
 * Take a look at the installed resources
@@ -42,12 +30,16 @@ kubectl create -f pod.yaml
   kubectl get all
   ```
 
-* Visit the prometheus UI in the browser
-
-  Get the External IP of the service
+* Visit the prometheus UI in the browser by port-forwarding to reach the codespaces instance:
 
   ```bash
-  kubectl get svc my-prometheus-server
+  kubectl port-forward svc/my-prometheus-server 80
+  ```
+
+* Reach via below URL:
+
+  ```bash
+  echo "https://${CODESPACE_NAME}-80.app.github.dev
   ```
 
 * Execute some query over the "graph" page in your browser
@@ -59,31 +51,32 @@ kubectl create -f pod.yaml
 
 ## Grafana
 
-* Add the grafana helm repo
-
-  ```bash
-  helm repo add grafana https://grafana.github.io/helm-charts
-  helm repo update
-  ```
-
 * Install grafana
 
   ```bash
-  helm install my-grafana grafana/grafana -f grafana-values.yaml
+  helm install my-grafana grafana \
+    --repo https://grafana.github.io/helm-charts \
+    -f grafana-values.yaml
   ```
 
-* Visit the grafana UI in the browser
-  Get the External IP of the service
+* Visit the grafana UI in the browser by Port-forwarding to reach the codespaces instance:
 
-  ```bash  
-  kubectl get svc
+  ```bash
+  kubectl port-forward svc/my-grafana 80
+  ```
+
+* Reach via below URL:
+
+  ```bash
+  echo "https://${CODESPACE_NAME}-80.app.github.dev
   ```
 
 * Add Prometheus as data source to Grafana
-  * Choose the Option `Configuration`/`Data Sources`
+  * Choose the Option `Connections`/`Data Sources`
+  * Click on `Add Data Source`
   * Choose type `Prometheus`
   * Insert URL `http://my-prometheus-server` and click `Save & Test`
-  * Choose the Option `Dashboards`/`Manage`/`Import`
+  * Choose the Option `Dashboards`/`New`/`Import`
   * Paste the number 1860 into the field `Grafana.com Dashboard` and click `Load` (Visit [https://grafana.com/grafana/dashboards](https://grafana.com/grafana/dashboards) for other Dashboards)
   * Choose the Datasource Prometheus in the field `Prometheus` and `Import` afterwards
   * Investigate the Dashboard; take care to a proper time range via the button on the right above
@@ -97,3 +90,4 @@ kubectl create -f pod.yaml
   helm delete my-prometheus
   kubectl delete pod my-pod
   ```
+
