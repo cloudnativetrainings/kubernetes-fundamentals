@@ -10,11 +10,8 @@ kind create cluster --config /kind-cluster-config.yaml
 docker run -d --rm --network host -v /var/run/docker.sock:/var/run/docker.sock \
   --name "cloud-provider-kind" quay.io/kubermatic-labs/devcontainers:cloud-provider-kind-adb535d
 
-## deploy cilium
-export CILIUM_VERSION="1.15.7"
-
-docker pull quay.io/cilium/cilium:v${CILIUM_VERSION}
-docker pull quay.io/cilium/operator-generic:v${CILIUM_VERSION}
+# deploy cilium
+# CILIUM_VERSION is defined in .devcontainer.json file
 
 kind load docker-image quay.io/cilium/cilium:v${CILIUM_VERSION}
 kind load docker-image quay.io/cilium/operator-generic:v${CILIUM_VERSION}
