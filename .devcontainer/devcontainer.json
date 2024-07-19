@@ -1,31 +1,39 @@
 {
-    "name": "Kubernetes - Local Configuration",
-    "image": "quay.io/kubermatic-labs/devcontainers:base-1c96c03",
-
+    "name": "Kubernetes Fundamentals Training Labs",
+    "image": "quay.io/kubermatic-labs/devcontainers:base-0cad700",
     "customizations": {
-        "vscode": {
-            "settings": {
-                "workbench.editorAssociations": {
-                    "*.md": "vscode.markdown.preview.editor"
-                },
-                "files.exclude": {
-                    ".git/": true,
-                    ".github/": true,
-                    ".devcontainer/": true
-                }
-            }
+      "vscode": {
+        "settings": {
+          "workbench.editorAssociations": {
+            "*.md": "vscode.markdown.preview.editor"
+          },
+          "files.exclude": {
+            ".git/": true,
+            ".github/": true,
+            ".devcontainer/": true
+          }
         }
+      }
     },
-
     "features": {
-        "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
-            "enableNonRootDocker": "true",
-            "moby": "true"
-        }
+      "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
+        "enableNonRootDocker": "true",
+        "moby": "true"
+      }
     },
-
     "remoteUser": "root",
-    "runArgs": ["--network=host"],
-    "forwardPorts": [8080, 80, 443],
+    "runArgs": [
+      "--network=host"
+    ],
+    "forwardPorts": [
+      8080,
+      80,
+      443
+    ],
+    "containerEnv": {
+      "CILIUM_VERSION": "1.15.7"
+    },
+    "onCreateCommand": "docker pull quay.io/cilium/cilium:v${CILIUM_VERSION} && docker pull quay.io/cilium/operator-generic:v${CILIUM_VERSION}",
     "postCreateCommand": "/entrypoint.sh"
-}
+  }
+  
