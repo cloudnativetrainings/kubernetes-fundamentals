@@ -1,6 +1,6 @@
 {
     "name": "Kubernetes Fundamentals Training Labs",
-    "image": "quay.io/kubermatic-labs/devcontainers:base-0cad700",
+    "image": "quay.io/kubermatic-labs/devcontainers:base-1c96c03",
     "customizations": {
       "vscode": {
         "settings": {
@@ -30,10 +30,6 @@
       80,
       443
     ],
-    "containerEnv": {
-      "CILIUM_VERSION": "1.15.7"
-    },
-    "onCreateCommand": "docker pull quay.io/cilium/cilium:v${CILIUM_VERSION} && docker pull quay.io/cilium/operator-generic:v${CILIUM_VERSION}",
     "postCreateCommand": "/entrypoint.sh"
   }
   
