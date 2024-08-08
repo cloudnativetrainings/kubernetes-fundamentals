@@ -5,7 +5,7 @@ In the training, we will learn about Prometheus.
 >Navigate to the lab folder:
 
 ```bash
-cd ${CODESPACE_VSCODE_FOLDER}/labs/29_prometheus
+cd /workspaces/kubernetes-fundamentals/labs/29_prometheus
 ```
 
 ## Create a pod

@@ -5,7 +5,7 @@ In this training, we will work with a Pod which contains 2 containers.
 >Navigate to the lab folder:
 
 ```bash
-cd ${CODESPACE_VSCODE_FOLDER}/labs/04_multi-container-pods
+cd /workspaces/kubernetes-fundamentals/labs/04_multi-container-pods
 ```
 
 ## Inspect pod-v1.yaml definition file and create the pod

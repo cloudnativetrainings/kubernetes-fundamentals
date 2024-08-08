@@ -5,7 +5,7 @@ In the training, we will learn about Daemonsets.
 >Navigate to the lab folder:
 
 ```bash
-cd ${CODESPACE_VSCODE_FOLDER}/labs/16_daemonsets
+cd /workspaces/kubernetes-fundamentals/labs/16_daemonsets
 ```
 
 ## Inspect daemonset.yaml definition file and create the daemonset

@@ -5,7 +5,7 @@ In this training course, we will show how the Kubernetes Scheduler tries to keep
 >Navigate to the lab folder:
 
 ```bash
-cd ${CODESPACE_VSCODE_FOLDER}/labs/20_scheduling-affinity
+cd /workspaces/kubernetes-fundamentals/labs/20_scheduling-affinity
 ```
 
 ## Inspect water-pod.yaml definition file and create the water-pod

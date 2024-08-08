@@ -5,7 +5,7 @@ In the training, we will learn about Statefulsets.
 >Navigate to the lab folder:
 
 ```bash
-cd ${CODESPACE_VSCODE_FOLDER}/labs/14_statefulsets
+cd /workspaces/kubernetes-fundamentals/labs/14_statefulsets
 ```
 
 ## Scaling

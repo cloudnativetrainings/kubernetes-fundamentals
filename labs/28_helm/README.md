@@ -5,7 +5,7 @@ In this training, we will use Helm to create and customize an application.
 >Navigate to the lab folder:
 
 ```bash
-cd ${CODESPACE_VSCODE_FOLDER}/labs/28_helm
+cd /workspaces/kubernetes-fundamentals/labs/28_helm
 ```
 
 ## Verify if helm is installed

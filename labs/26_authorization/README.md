@@ -5,7 +5,7 @@ In the training, we will learn about create role based access for a user to gran
 >Navigate to the lab folder:
 
 ```bash
-cd ${CODESPACE_VSCODE_FOLDER}/labs/26_authorization
+cd /workspaces/kubernetes-fundamentals/labs/26_authorization
 ```
 
 ## Inspect definition files and create the servicaccount, clusterrole and clusterrolebinding

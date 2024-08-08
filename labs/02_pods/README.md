@@ -5,7 +5,7 @@ In this training, we will create a pod and learn how to interact with it.
 >Navigate to the lab folder:
 
 ```bash
-cd ${CODESPACE_VSCODE_FOLDER}/labs/02_pods
+cd /workspaces/kubernetes-fundamentals/labs/02_pods
 ```
 
 ## Create Pod

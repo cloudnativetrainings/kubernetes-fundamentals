@@ -5,7 +5,7 @@ In this training course, we will use taints and tolerations to influence schedul
 >Navigate to the lab folder:
 
 ```bash
-cd ${CODESPACE_VSCODE_FOLDER}/labs/21_scheduling-taints-and-tolerations
+cd /workspaces/kubernetes-fundamentals/labs/21_scheduling-taints-and-tolerations
 ```
 
 ## Taint the node

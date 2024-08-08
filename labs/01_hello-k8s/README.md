@@ -5,7 +5,7 @@ In this course, we will create an application which will be reachable in the WWW
 >Navigate to the lab folder:
 
 ```bash
-cd ${CODESPACE_VSCODE_FOLDER}/labs/01_hello-k8s
+cd /workspaces/kubernetes-fundamentals/labs/01_hello-k8s
 ```
 
 ## Create and expose the application

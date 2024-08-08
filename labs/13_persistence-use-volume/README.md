@@ -5,7 +5,7 @@ In the training, we will learn how to use persistentvolumeclaim in a pod.
 >Navigate to the lab folder:
 
 ```bash
-cd ${CODESPACE_VSCODE_FOLDER}/labs/13_persistence-use-volume
+cd /workspaces/kubernetes-fundamentals/labs/13_persistence-use-volume
 ```
 
 ## Inspect and create the pvc

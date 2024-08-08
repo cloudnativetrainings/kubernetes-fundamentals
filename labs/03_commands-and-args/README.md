@@ -5,7 +5,7 @@ In this training, we will learn to create a customized Pod.
 >Navigate to the lab folder:
 
 ```bash
-cd ${CODESPACE_VSCODE_FOLDER}/labs/03_commands-and-args
+cd /workspaces/kubernetes-fundamentals/labs/03_commands-and-args
 ```
 
 ## Inspect and create the pod

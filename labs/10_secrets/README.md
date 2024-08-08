@@ -5,7 +5,7 @@ In the training, we will learn about Secrets.
 >Navigate to the lab folder:
 
 ```bash
-cd ${CODESPACE_VSCODE_FOLDER}/labs/10_secrets
+cd /workspaces/kubernetes-fundamentals/labs/10_secrets
 ```
 
 >Note that, there are errors in the yaml files. Try to fix them.

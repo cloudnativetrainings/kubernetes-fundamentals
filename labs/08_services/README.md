@@ -5,7 +5,7 @@ In the training, we will learn about Services.
 >Navigate to the lab folder:
 
 ```bash
-cd ${CODESPACE_VSCODE_FOLDER}/labs/08_services
+cd /workspaces/kubernetes-fundamentals/labs/08_services
 ```
 
 ## Create and expose the application

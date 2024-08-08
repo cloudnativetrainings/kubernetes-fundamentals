@@ -5,7 +5,7 @@ In the training, we will learn about Configmaps.
 >Navigate to the lab folder:
 
 ```bash
-cd ${CODESPACE_VSCODE_FOLDER}/labs/09_configmaps
+cd /workspaces/kubernetes-fundamentals/labs/09_configmaps
 ```
 
 ## Inspect configmap.yaml definition file and create the configmap

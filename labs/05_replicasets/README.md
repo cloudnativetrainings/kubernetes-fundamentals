@@ -5,7 +5,7 @@ In this training, we will learn about Replicasets.
 >Navigate to the lab folder:
 
 ```bash
-cd ${CODESPACE_VSCODE_FOLDER}/labs/05_replicasets
+cd /workspaces/kubernetes-fundamentals/labs/05_replicasets
 ```
 
 ## Inspect the replicaset.yaml definition file and create the replicaset

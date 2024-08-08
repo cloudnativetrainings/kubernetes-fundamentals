@@ -5,7 +5,7 @@ In this training, we will setup an Ingress and expose an app showing a blue scre
 >Navigate to the lab folder:
 
 ```bash
-cd ${CODESPACE_VSCODE_FOLDER}/labs/22_ingress
+cd /workspaces/kubernetes-fundamentals/labs/22_ingress
 ```
 
 ## Create the red application
@@ -79,5 +79,4 @@ echo "https://${CODESPACE_NAME}-80.app.github.dev/blue"
 
 ```bash
 kubectl delete -f .
-helm uninstall ingress-nginx -n ingress-nginx
 ```

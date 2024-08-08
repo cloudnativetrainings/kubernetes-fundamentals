@@ -5,7 +5,7 @@ In the training, we will learn about Deployment.
 >Navigate to the lab folder:
 
 ```bash
-cd ${CODESPACE_VSCODE_FOLDER}/labs/06_deployments
+cd /workspaces/kubernetes-fundamentals/labs/06_deployments
 ```
 
 ## Recreate rollout strategy

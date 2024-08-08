@@ -5,7 +5,7 @@ In the training, we will learn about Horizontal Pod Autoscaler.
 >Navigate to the lab folder:
 
 ```bash
-cd ${CODESPACE_VSCODE_FOLDER}/labs/15_hpas
+cd /workspaces/kubernetes-fundamentals/labs/15_hpas
 ```
 
 ## Create the service and the deployment

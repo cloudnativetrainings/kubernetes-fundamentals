@@ -5,7 +5,7 @@ In the training, we will learn about Static Persistence.
 >Navigate to the lab folder:
 
 ```bash
-cd ${CODESPACE_VSCODE_FOLDER}/labs/11_persistence-static
+cd /workspaces/kubernetes-fundamentals/labs/11_persistence-static
 ```
 
 ## Inspect pv.yaml definition file and create the pv

@@ -5,7 +5,7 @@ In this training, we will create a job and parallelize its execution.
 >Navigate to the lab folder:
 
 ```bash
-cd ${CODESPACE_VSCODE_FOLDER}/labs/17_jobs
+cd /workspaces/kubernetes-fundamentals/labs/17_jobs
 ```
 
 ## Inspect  job.yaml definition file and create the job

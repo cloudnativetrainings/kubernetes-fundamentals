@@ -5,7 +5,7 @@ In the training, we will learn how to track the Revision History.
 >Navigate to the lab folder:
 
 ```bash
-cd ${CODESPACE_VSCODE_FOLDER}/labs/07_revision-history
+cd /workspaces/kubernetes-fundamentals/labs/07_revision-history
 ```
 
 ## Inspect deployment.yaml definition file and create the deployment

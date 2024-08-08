@@ -5,7 +5,7 @@ In the training, we will learn about Dynamic Persistence.
 >Navigate to the lab folder:
 
 ```bash
-cd ${CODESPACE_VSCODE_FOLDER}/labs/12_persistence-dynamic
+cd /workspaces/kubernetes-fundamentals/labs/12_persistence-dynamic
 ```
 
 ## Inspect storageclass-v1.yaml definition file and create the storageclass

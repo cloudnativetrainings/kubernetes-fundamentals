@@ -5,7 +5,7 @@ In this training course, we will create a job which will run every minute.
 >Navigate to the lab folder:
 
 ```bash
-cd ${CODESPACE_VSCODE_FOLDER}/labs/18_cronjobs
+cd /workspaces/kubernetes-fundamentals/labs/18_cronjobs
 ```
 
 ## Inspect cronjob.yaml definition file and create the cronjob
