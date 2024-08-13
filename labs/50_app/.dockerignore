@@ -1,5 +1,0 @@
-.gitignore
-Dockerfile*
-training-application
-makefile
-README.md
