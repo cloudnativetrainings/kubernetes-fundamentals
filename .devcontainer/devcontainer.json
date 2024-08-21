@@ -1,6 +1,6 @@
 {
     "name": "Kubernetes Fundamentals Training Labs",
-    "image": "quay.io/kubermatic-labs/devcontainers:kubernetes-fundamentals-3817042",
+    "image": "quay.io/kubermatic-labs/devcontainers:kubernetes-fundamentals-382ea29",
     "customizations": {
       "vscode": {
         "settings": {
@@ -30,6 +30,6 @@
       80,
       443
     ],
-    "postCreateCommand": "/entrypoint.sh"
+    "postCreateCommand": "/setup_kind_cluster.sh"
   }
   

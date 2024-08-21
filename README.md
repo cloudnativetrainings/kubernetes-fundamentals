@@ -1,6 +1,7 @@
-# Kubernetes Fundamentals Labs
+# Kubernetes Fundamentals
 
-This training environment is designed to work with GitHub Codespaces and/or devcontainers on VSCode.
+## Setup training environment
 
-## todo
-...
+This repository is designed to work with GitHub Codespaces (hence devcontaners).
+
+Start the codespaces on the repo, wait until the setup is ready, and start with the [01_hello-k8s](./labs/01_hello-k8s/README.md) lab.
