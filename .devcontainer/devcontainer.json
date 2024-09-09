@@ -1,6 +1,6 @@
 {
     "name": "Kubernetes Fundamentals Training Labs",
-    "image": "quay.io/kubermatic-labs/devcontainers:kubernetes-fundamentals-382ea29",
+    "image": "quay.io/kubermatic-labs/devcontainers:kubernetes-fundamentals-88f53a0",
     "customizations": {
       "vscode": {
         "settings": {
