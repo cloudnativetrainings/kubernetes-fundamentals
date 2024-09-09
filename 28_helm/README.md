@@ -51,7 +51,7 @@ cd /workspaces/kubernetes-fundamentals/28_helm
 * Port forward the service port 80 to the local port 8080
 
   ```bash
-  kubectl port-forward service/my-service 8080:80
+  kubectl port-forward service/my-cyan-service 8080:80
   ```
 
 * You can now access the service (in a seperate terminal)
@@ -97,7 +97,7 @@ cd /workspaces/kubernetes-fundamentals/28_helm
 * Port forward the service port 80 to the local port 8080
 
   ```bash
-  kubectl port-forward service/my-service 8080:80
+  kubectl port-forward service/my-magenta-service 8080:80
   ```
 
 * You can now access the service (in a seperate terminal)
@@ -136,8 +136,10 @@ cd /workspaces/kubernetes-fundamentals/28_helm
 
 * Port forward the service port 80 to the local port 8080
 
+  > You need to provide the updated color name on the command below:
+
   ```bash
-  kubectl port-forward service/my-service 8080:80
+  kubectl port-forward service/my-<color>-service 8080:80
   ```
 
 * You can now access the service (in a seperate terminal)
